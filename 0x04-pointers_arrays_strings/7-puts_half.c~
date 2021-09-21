@@ -1,0 +1,23 @@
+#include "holberton.h"
+
+/**
+ *puts_half - prints half of a string
+ *@str: string
+ *
+ *Return (VOID)
+ */
+void puts_half(char *str)
+{
+	int count = 0;
+	int n;
+
+	while (str[count] != '\0')
+	{
+		count++;
+	}
+	for (n = (count - 1) / 2; n < count; ++n)
+	{
+		_putchar(str[n]);
+	}
+	_putchar('\n');
+}

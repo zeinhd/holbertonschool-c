@@ -1,0 +1,31 @@
+/**
+ *_strncpy - copy certain
+ *@dest: destination
+ *@src: source
+ *@n: nb of copies
+ *
+ *Return: Pointer
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	char *start = dest;
+	int count = 0;
+
+	if (n > 0)
+		*(dest + (n - 1)) = '\0';
+	while (*src != '\0')
+	{
+		*dest++ = *src++;
+		count++;
+		if (count == n)
+			break;
+	}
+	while (*dest != '\0')
+	{
+		*dest++ = '\0';
+		count++;
+		if (count == n)
+			break;
+	}
+	return (start);
+}

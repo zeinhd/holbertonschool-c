@@ -1,0 +1,24 @@
+#include "holberton.h"
+/**
+ * _abs - prints absolute value of inserted number
+ * @i: number value
+ *
+ * Return: 1 (is positive)
+ * 0 (is zero)
+ * -1 (is negative)
+ */
+int _abs(int i)
+{
+	if (i < 0)
+	{
+		return (i * -1);
+	}
+	else if (i >= 0)
+	{
+		return (i);
+	}
+	else
+	{
+		return (i);
+	}
+}
